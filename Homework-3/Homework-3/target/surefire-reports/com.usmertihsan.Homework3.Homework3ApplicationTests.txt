@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.usmertihsan.Homework3.Homework3ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.2 s <<< FAILURE! - in com.usmertihsan.Homework3.Homework3ApplicationTests
+contextLoads  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'authenticationController' method 
+com.usmertihsan.Homework3.jwt.controller.AuthenticationController#login(JwtLoginRequestDto)
+to {POST [/auth/register]}: There is already 'authenticationController' bean method
+com.usmertihsan.Homework3.jwt.controller.AuthenticationController#register(UsrUserSaveRequestDto) mapped.
+Caused by: java.lang.IllegalStateException: 
+Ambiguous mapping. Cannot map 'authenticationController' method 
+com.usmertihsan.Homework3.jwt.controller.AuthenticationController#login(JwtLoginRequestDto)
+to {POST [/auth/register]}: There is already 'authenticationController' bean method
+com.usmertihsan.Homework3.jwt.controller.AuthenticationController#register(UsrUserSaveRequestDto) mapped.
+
